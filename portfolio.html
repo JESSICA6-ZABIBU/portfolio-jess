@@ -182,36 +182,137 @@
             </div>
         </section>
 
-        <section class="mt-8 mx-20 text-center bg-white rounded-xl">
-            <h2  class="capitalize font-bold text-2xl pt-4 ">Langues</h2>
-
-            <div class="mt-8 flex flex-col-3 gap-8 justify-center justify-between px-6 ">
-                <div>
-                    <p>Français</p>
-                    <p>Lingala</p>
-                    <p>Swahili</p>
-                    <p>Anglais</p>
+        <section class="mt-8 mx-auto max-w-2xl text-center bg-white rounded-xl pb-6 px-6">
+            <h2 class="capitalize font-bold text-2xl pt-4">Langues</h2>
+          
+            <div class="mt-8 flex justify-center">
+              <div class="grid grid-cols-2 gap-x-16 text-left">
+                <!-- Colonne Langues -->
+                <div class="space-y-2">
+                  <p>Français</p>
+                  <p>Lingala</p>
+                  <p>Swahili</p>
+                  <p>Anglais</p>
                 </div>
-    
-                <div  class="font-semi-bold">
-                    <p>Natif</p>
-                    <p>Natif</p>
-                    <p>Courant</p>
-                    <p>debutant</p>
+          
+                <!-- Colonne Niveaux -->
+                <div class="space-y-2 font-semibold">
+                  <p>Courant</p>
+                  <p>Natif</p>
+                  <p>Courant</p>
+                  <p>Débutant</p>
                 </div>
+              </div>
             </div>
-           
         </section>
+          
+          
 
-        <section class="discutons mt-8 mx-20 text-center bg-white rounded-xl ">
+        <section class="discutons mt-8 mx-auto max-w-2xl text-center bg-white rounded-xl pb-6 px-6">
             <h2 class="font-bold text-2xl pt-4">Vous avez un projet en tête ?</h2>
+            
             <div class="pt-2">
-               <p class="pt-2">Je suis toujours intéressée par de nouveaux défis et opportunités de collaboration. Contactez-moi pour discuter de votre projet.</p> 
-               <button class="mt-4 bg-pink-200 px-4 py-2 rounded" >discutons de votre projet</button>
+              <p class="pt-2">
+                Je suis toujours intéressée par de nouveaux défis et opportunités de collaboration. 
+                Contactez-moi pour discuter de votre projet.
+              </p> 
+              
+              <button class="mt-4 bg-pink-200 px-4 py-2 rounded hover:bg-pink-300 transition">
+                Discutons de votre projet
+              </button>
             </div>
         </section>
+          
 
-       
+        <section class="py-12 px-4 md:px-20 bg-white text-gray-800 mt-8">
+            <h2 class="text-3xl font-bold text-center mb-2">Me Contacter</h2>
+            <p class="text-center text-gray-600 mb-10">
+              N'hésitez pas à me contacter pour discuter de vos projets ou pour toute collaboration.
+            </p>
+          
+            <div class="grid md:grid-cols-2 gap-10">
+              <!-- Infos de contact -->
+              <div class="space-y-6">
+                <h3 class="text-2xl font-semibold">Informations de Contact</h3>
+          
+                <!-- Téléphone -->
+                <div class="flex items-start bg-gray-100 p-4 rounded-lg">
+                  <span class="text-yellow-400 text-xl mr-3">📞</span>
+                  <div>
+                    <p class="font-bold">Téléphone</p>
+                    <p>+243 853 447 045</p>
+                    <p>+243 818 828 985</p>
+                  </div>
+                </div>
+          
+                <!-- Email -->
+                <div class="flex items-start bg-gray-100 p-4 rounded-lg">
+                  <span class="text-pink-400 text-xl mr-3">✉️</span>
+                  <div>
+                    <p class="font-bold">Email</p>
+                    <p>jesszabibu15@gmail.com</p>
+                  </div>
+                </div>
+          
+                <!-- Localisation -->
+                <div class="flex items-start bg-gray-100 p-4 rounded-lg">
+                  <span class="text-pink-400 text-xl mr-3">📍</span>
+                  <div>
+                    <p class="font-bold">Localisation</p>
+                    <p>Lubumbashi</p>
+                    <p>République Démocratique du Congo</p>
+                  </div>
+                </div>
+          
+                <!-- LinkedIn -->
+                <div class="flex items-start bg-gray-100 p-4 rounded-lg">
+                  <span class="text-pink-400 text-xl mr-3">🔗</span>
+                  <div>
+                    <p class="font-bold">LinkedIn</p>
+                    <p>linkedin.com/in/jessica-zabibu</p>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Formulaire -->
+              <form class="space-y-6">
+                <h3 class="text-2xl font-semibold">Envoyez-moi un message</h3>
+          
+                <!-- Nom + Email -->
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block font-medium mb-1">Nom complet *</label>
+                    <input type="text" placeholder="Votre nom" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400" />
+                  </div>
+                  <div>
+                    <label class="block font-medium mb-1">Email *</label>
+                    <input type="email" placeholder="votre@email.com" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400" />
+                  </div>
+                </div>
+          
+                <!-- Sujet -->
+                <div>
+                  <label class="block font-medium mb-1">Sujet *</label>
+                  <input type="text" placeholder="Objet de votre message" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400" />
+                </div>
+          
+                <!-- Message -->
+                <div>
+                  <label class="block font-medium mb-1">Message *</label>
+                  <textarea rows="5" placeholder="Décrivez votre projet ou votre demande..." required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400"></textarea>
+                </div>
+          
+                <!-- Bouton -->
+                <div>
+                  <button type="submit" class="bg-pink-200 hover:bg-pink-400 text-black font-semibold py-3 px-6 rounded-lg flex items-center gap-2">
+                    <span>📨</span> Envoyer le message
+                  </button>
+                  <p class="text-sm mt-2 text-gray-500">* Champs obligatoires - Je vous répondrai dans les 24h</p>
+                </div>
+              </form>
+            </div>
+        </section>
+          
 
 
   </section>
