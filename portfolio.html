@@ -9,21 +9,24 @@
       rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
 </head>
-<body class="bg-gray-100 text-black">
+<body class="bg-gray-200 text-black">
     <header>
-        <div  class="flex justify-between items-center mt-8 mx-10 capitalize font-semi-bold ">
+        <div class="flex flex-col md:flex-row justify-between items-center mt-8 mx-4 md:mx-10 capitalize font-semi-bold gap-4">
             <div class="flex items-center gap-2">
                 <p class="border-black rounded-full px-4 py-2 font-bold">j</p>
                 <p>jessica</p>
             </div>
-
-          <a href="#" class="hover:text-pink-600 ">a propos</a>
-          <a href="#" class="hover:text-pink-600">home</a>
-          <a href="#" class="hover:text-pink-600">services</a>
-          <a href="#" class="hover:text-pink-600">cv</a>
-          <a href="#" class="border px-2 hover:text-pink-400  ">hire me</a>
-     </div>
+    
+            <div class="flex flex-wrap gap-4 justify-center md:justify-end">
+                <a href="#" class="hover:text-pink-600">a propos</a>
+                <a href="#" class="hover:text-pink-600">home</a>
+                <a href="#" class="hover:text-pink-600">services</a>
+                <a href="#" class="hover:text-pink-600">cv</a>
+                <a href="#" class="border px-2 hover:text-pink-400">hire me</a>
+            </div>
+        </div>
     </header>
+    
 
   <section class=" text-black "> 
         <section class="hero-section ">
@@ -54,14 +57,10 @@
                     <img src="images/homepage1.jpeg" class="w-80 h-80 rounded-xl object-cover mt-10 mb-4" alt="">
                     <div class="">
                      <p> 
-                            Je suis <span class="font-bold text-pink-400 text-2xl ">Jessica Zabibu Omari</span> , développeuse web et web mobile à Lubumbashi. 
+                            Je suis <span class="font-bold text-black-400 text-2xl ">Jessica Zabibu Omari</span> , développeuse web et web mobile à Lubumbashi. 
                             Passionnée par la technologie et la résolution de problèmes, je combine mes compétences en développement et en gestion pour livrer des interfaces performantes et intuitives.
                             Avec une formation en gestion et une expertise technique en développement web, j'apporte une approche unique alliant vision business et excellence technique à chaque projet que j'entreprends.
                      </p>
-                     <div class="flex items-center gap-4 mt-8 font-semi-bold capitalize"> 
-                            <p> 1ans d'experience</p>
-                            <p>10+ Projets réalisés</p>
-                     </div>
                     </div>
                 </div>
             </div>
@@ -320,53 +319,56 @@
           
   </section>
 
-  <footer>
-    <div>
+  <footer class="bg-gray-200">
+    <div class="mt-8 flex flex-col-3 gap-20 justify-between justify-center px-6 ">
         <div>
-            <h1>Jessica Zabibu</h1>
-            <p>Développeuse web et mobile passionnée, créant des solutions digitales modernes et performantes à Lubumbashi.</p>
+            <h1  class="capitalize font-bold">Jessica Zabibu</h1>
+            <p>Développeuse web et mobile passionnée, </p>
+            <p>créant des solutions digitales modernes </p>
+            <p>et performantes à Lubumbashi.</p>
             <div>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </div>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
             
+            </div> 
+               
         </div>
 
         <div>
 
-            <h2>Navigation</h2>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <h2 class="capitalize font-bold">Navigation</h2>
+            <a href="#"  class="capitalize">a propos</a>
+            <a href="#" class="capitalize">home</a>
+            <a href="#" class="capitalize">services</a>
+            <a href="#" class="capitalize">cv</a>
 
         </div>
 
         <div>
 
-            <h2>Contact</h2>
+            <h2 class="capitalize font-bold">Contact</h2>
             <p>📍 Lubumbashi, RDC</p>
             <p>📞 +243 853 447 045</p>
             <p>📞 +243 818 828 985</p>
             <p>📧 jesszabibu15@gmail.com</p>
 
+            <div  class="bg-gray-200 px-4 py-2 mt-8 mx-auto max-w-2xl text-center bg-grayrounded-xl pb-6 px-6 ">
+                <p>Disponible pour de nouveaux projets</p>
+                <p>En ligne</p>
+            </div>
+
         </div>
-
-        <div>
-            <p>Disponible pour de nouveaux projets
-
-                En ligne</p>
-        </div>
-
-        <div></div>
-
-        <div>
-            <p>© 2025 Jessica Zabibu | Portfolio personnel. Fait avec  à Lubumbashi</p>
-            <i class="bi bi-arrow-up-circle">retour</i>
-        </div>
+        
     </div>
+
+    <div class="border-b-2 text-gray-800 mx-20 mt-8"></div>
+
+    <div class="capitalize font-bold flex justify-between mx-8 mt-4">
+        <p>© 2025 Jessica Zabibu | Portfolio personnel. Fait à Lubumbashi</p>
+        <i class="bi bi-arrow-up-circle">retour</i>
+    </div>
+
   </footer>
    
 </body>
