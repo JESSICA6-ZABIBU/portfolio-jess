@@ -11,19 +11,20 @@
 </head>
 <body class="bg-gray-200 text-black">
     <header>
-        <div class="flex flex-col md:flex-row justify-between items-center mt-8 mx-4 md:mx-10 capitalize font-semi-bold gap-4">
+        <div class="flex flex-col-2 md:flex-row justify-between items-center mt-6 mx-4 md:mx-10 capitalize font-semi-bold gap-4">
             <div class="flex items-center gap-2">
                 <p class="border-black rounded-full px-4 py-2 font-bold">j</p>
                 <p>jessica</p>
             </div>
     
-            <div class="flex flex-wrap gap-4 justify-center md:justify-end">
+            <div class="flex flex-wrap gap-4 justify-center hidden md:hidden">
                 <a href="#" class="hover:text-pink-600">a propos</a>
                 <a href="#" class="hover:text-pink-600">home</a>
                 <a href="#" class="hover:text-pink-600">services</a>
                 <a href="#" class="hover:text-pink-600">cv</a>
                 <a href="#" class="border px-2 hover:text-pink-400">hire me</a>
             </div>
+            <i class="bi bi-list text-2xl"></i>
         </div>
     </header>
     
@@ -49,92 +50,86 @@
 
         </section>
 
-        <section class="about mt-8 mx-20 " >
-            <div class="">
-                <h1 class="text-center capitalize font-bold border-b mx-20 text-4xl">Qui suis-je ?</h1>
-               
-                <div class=" flex justify-between gap-10 items-center "> 
-                    <img src="images/homepage1.jpeg" class="w-80 h-80 rounded-xl object-cover mt-10 mb-4" alt="">
-                    <div class="">
-                     <p> 
-                            Je suis <span class="font-bold text-black-400 text-2xl ">Jessica Zabibu Omari</span> , développeuse web et web mobile à Lubumbashi. 
-                            Passionnée par la technologie et la résolution de problèmes, je combine mes compétences en développement et en gestion pour livrer des interfaces performantes et intuitives.
-                            Avec une formation en gestion et une expertise technique en développement web, j'apporte une approche unique alliant vision business et excellence technique à chaque projet que j'entreprends.
-                     </p>
-                    </div>
+        <section class="about mt-8 mx-4 md:mx-20">
+            <h1 class="text-center capitalize font-bold border-b mx-4 md:mx-20 text-4xl">Qui suis-je ?</h1>
+        
+            <div class="flex flex-col md:flex-row justify-between gap-10 items-center mt-8">
+                <img src="images/homepage1.jpeg" class="w-80 h-80 rounded-xl object-cover mb-4 md:mb-0" alt="">
+                <div class="">
+                    <p>
+                        Je suis <span class="font-bold text-black-400 text-2xl">Jessica Zabibu Omari</span>, développeuse web et web mobile à Lubumbashi.
+                        Passionnée par la technologie et la résolution de problèmes...
+                    </p>
                 </div>
             </div>
         </section>
-
-        <section class="projets et realisations bg-white   ">
-            <div class="">
-                <h2 class="text-center mt-8 pt-10 capitalize font-bold  text-4xl">Projets & Réalisations</h2>
-                <p class="text-center pt-2">Découvrez quelques-uns de mes projets récents qui démontrent mes compétences en développement web et mobile.</p>
-            </div>
-
-            <div class="mt-8 flex flex-col-3 gap-8 justify-center">
-                <div class=""> 
-                    <img src="images/soma-congo.png" class="w-80 h-40 " alt="">
+        
+        <section class="projets et realisations bg-white">
+            <h2 class="text-center mt-8 pt-10 capitalize font-bold text-4xl">Projets & Réalisations</h2>
+            <p class="text-center pt-2">Découvrez quelques-uns de mes projets récents...</p>
+        
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-20">
+                <div>
+                    <img src="images/soma-congo.png" class="w-full h-40 object-cover" alt="">
                     <p>site de e-learning au congo</p>
                 </div>
-
                 <div>
-                    <img src="images/ScreenShot Tool -20250602154235.png" class="w-80 h-40" alt="">
+                    <img src="images/ScreenShot Tool -20250602154235.png" class="w-full h-40 object-cover" alt="">
                     <p>application d'organisation d'evenevement</p>
                 </div>
-
                 <div>
-                    <img src="images/ScreenShot Tool -20250602195015.png" class="w-80 h-40" alt="">
+                    <img src="images/ScreenShot Tool -20250602195015.png" class="w-full h-40 object-cover" alt="">
                     <p>site de formation crypto-monnaie</p>
                 </div>
-               
             </div>
-            
         </section>
-
-        <section class="mt-8 mx-20 text-center">
-
+        
+        <section class="mt-8 px-4 md:px-20 text-center">
             <h1 class="capitalize font-bold text-4xl">Mes Compétences</h1>
+        
             <div>
-                <h2  class="capitalize font-bold text-2xl pt-4">
+                <h2 class="capitalize font-bold text-2xl pt-4">
                     Compétences Techniques
                 </h2>
             </div>
-            <div class="mt-8 mx-20">
-                <div >
+        
+            <div class="mt-8 text-left space-y-6">
+        
+                <!-- HTML/CSS -->
+                <div>
                     <div class="flex justify-between text-sm font-semibold mb-1">
                         <span>HTML/CSS</span>
                         <span>95%</span>
                     </div>
-    
                     <div class="w-full bg-gray-200 h-2 rounded-full">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 85%;"></div>
+                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 95%;"></div>
                     </div>
                 </div>
-               
-
-                <div class="pt-4">
+        
+                <!-- JavaScript -->
+                <div>
                     <div class="flex justify-between text-sm font-semibold mb-1">
                         <span>JavaScript</span>
                         <span>75%</span>
                     </div>
-    
                     <div class="w-full bg-gray-200 h-2 rounded-full">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 90%;"></div>
+                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 75%;"></div>
                     </div>
                 </div>
-                
-                <div class="pt-4">
+        
+                <!-- AdonisJS -->
+                <div>
                     <div class="flex justify-between text-sm font-semibold mb-1">
-                      <span>AdonisJS</span>
-                      <span>70%</span>
+                        <span>AdonisJS</span>
+                        <span>70%</span>
                     </div>
                     <div class="w-full bg-gray-200 h-2 rounded-full">
-                      <div class="bg-yellow-400 h-2 rounded-full" style="width: 85%;"></div>
+                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 70%;"></div>
                     </div>
                 </div>
-
-                <div class="pt-4">
+        
+                <!-- Tailwind CSS -->
+                <div>
                     <div class="flex justify-between text-sm font-semibold mb-1">
                         <span>Tailwind CSS</span>
                         <span>95%</span>
@@ -143,67 +138,64 @@
                         <div class="bg-yellow-400 h-2 rounded-full" style="width: 95%;"></div>
                     </div>
                 </div>
-
-                <div class="pt-4">
+        
+                <!-- Figma -->
+                <div>
                     <div class="flex justify-between text-sm font-semibold mb-1">
-                      <span>figma community</span>
-                      <span>90%</span>
+                        <span>Figma Community</span>
+                        <span>90%</span>
                     </div>
                     <div class="w-full bg-gray-200 h-2 rounded-full">
-                      <div class="bg-yellow-400 h-2 rounded-full" style="width: 90%;"></div>
+                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 90%;"></div>
                     </div>
-                  </div>
-
+                </div>
+        
             </div>
-            
-            <h1 class="capitalize font-bold text-2xl pt-4 mt-8">Soft Skills</h1>
-            
-            <div class="mt-10 flex flex-col-3 gap-8 justify-center">
-                
-                <div class="">
-                    <p>Travail d'équipe</p>
-                    <p>Sens du détail</p>
-                    <p>Gestion du temps</p>
-                    <p>Adaptabilité</p>
+
+        </section>
+      
+            <h1 class="capitalize font-bold text-2xl pt-4 mt-8 text-center">Soft Skills</h1>
+                <div class="mt-10 grid grid-cols-2 sm:grid-cols-2 gap-8 px-4 md:px-20 text-center">
+                    <div>
+                        <p>Travail d'équipe</p>
+                        <p>Sens du détail</p>
+                        <p>Gestion du temps</p>
+                        <p>Adaptabilité</p>
+                    </div>
+                    <div>
+                        <p>Polyvalente</p>
+                        <p>Confidentialité</p>
+                        <p>Communication</p>
+                        <p>Résolution de problèmes</p>
+                    </div>
                 </div>
 
-                <div>
-                    <p>Polyvalente</p>
-                    <p>Confidentialité</p>
-                    <p>Communication</p>
-                    <p>Résolution de problèmes</p>
-                </div>
-               
-            </div>
-            
-            <div>
-
-            </div>
         </section>
 
-        <section class="mt-8 mx-auto max-w-2xl text-center bg-white rounded-xl pb-6 px-6">
+       <section class="mt-8 mx-auto max-w-2xl text-center bg-white rounded-xl pb-6 px-4 md:px-6">
             <h2 class="capitalize font-bold text-2xl pt-4">Langues</h2>
-          
+
             <div class="mt-8 flex justify-center">
-              <div class="grid grid-cols-2 gap-x-16 text-left">
-                <!-- Colonne Langues -->
-                <div class="space-y-2">
-                  <p>Français</p>
-                  <p>Lingala</p>
-                  <p>Swahili</p>
-                  <p>Anglais</p>
+                <div class="grid grid-cols-2 sm:grid-cols-2 gap-x-4 md:gap-x-16 text-left">
+                    <!-- Colonne Langues -->
+                    <div class="space-y-2">
+                        <p>Français</p>
+                        <p>Lingala</p>
+                        <p>Swahili</p>
+                        <p>Anglais</p>
+                    </div>
+
+                    <!-- Colonne Niveaux -->
+                    <div class="space-y-2 font-semibold">
+                        <p>Courant</p>
+                        <p>Natif</p>
+                        <p>Courant</p>
+                        <p>Débutant</p>
+                    </div>
                 </div>
-          
-                <!-- Colonne Niveaux -->
-                <div class="space-y-2 font-semibold">
-                  <p>Courant</p>
-                  <p>Natif</p>
-                  <p>Courant</p>
-                  <p>Débutant</p>
-                </div>
-              </div>
             </div>
-        </section>
+     </section>
+
           
           
 
@@ -232,7 +224,7 @@
             <div class="grid md:grid-cols-2 gap-10">
               <!-- Infos de contact -->
               <div class="space-y-6">
-                <h3 class="text-2xl font-semibold">Informations de Contact</h3>
+                <h3 class="text-2xl font-bold text-center">Informations de Contact</h3>
           
                 <!-- Téléphone -->
                 <div class="flex items-start bg-gray-100 p-4 rounded-lg">
@@ -249,7 +241,7 @@
                   <span class="text-pink-400 text-xl mr-3">✉️</span>
                   <div>
                     <p class="font-bold">Email</p>
-                    <p>jesszabibu15@gmail.com</p>
+                    <a href="">jesszabibu15@gmail.com</a>
                   </div>
                 </div>
           
@@ -268,7 +260,7 @@
                   <span class="text-pink-400 text-xl mr-3">🔗</span>
                   <div>
                     <p class="font-bold">LinkedIn</p>
-                    <p>linkedin.com/in/jessica-zabibu</p>
+                    <a href="#https://www.linkedin.com/in/jessicazabibu/">LinkedIn</a>
                   </div>
                 </div>
               </div>
@@ -319,57 +311,48 @@
           
   </section>
 
-  <footer class="bg-gray-200">
-    <div class="mt-8 flex flex-col-3 gap-20 justify-between justify-center px-6 ">
+  <footer class="bg-gray-200 px-4 md:px-20 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         <div>
-            <h1  class="capitalize font-bold">Jessica Zabibu</h1>
-            <p>Développeuse web et mobile passionnée, </p>
-            <p>créant des solutions digitales modernes </p>
-            <p>et performantes à Lubumbashi.</p>
-            <div>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-            
-            </div> 
-               
+            <h1 class="capitalize font-bold">Jessica Zabibu</h1>
+            <p>Développeuse web et mobile passionnée, 
+                créant des solutions digitales modernes et performantes à Lubumbashi.</p>
         </div>
 
         <div>
-
             <h2 class="capitalize font-bold">Navigation</h2>
-            <a href="#"  class="capitalize">a propos</a>
-            <a href="#" class="capitalize">home</a>
-            <a href="#" class="capitalize">services</a>
-            <a href="#" class="capitalize">cv</a>
-
+            <div class="flex flex-col gap-2 mt-2">
+                <a href="#" class="capitalize">a propos</a>
+                <a href="#" class="capitalize">home</a>
+                <a href="#" class="capitalize">services</a>
+                <a href="#" class="capitalize">cv</a>
+            </div>
         </div>
 
         <div>
-
             <h2 class="capitalize font-bold">Contact</h2>
             <p>📍 Lubumbashi, RDC</p>
             <p>📞 +243 853 447 045</p>
             <p>📞 +243 818 828 985</p>
-            <p>📧 jesszabibu15@gmail.com</p>
-
-            <div  class="bg-gray-200 px-4 py-2 mt-8 mx-auto max-w-2xl text-center bg-grayrounded-xl pb-6 px-6 ">
+            <a href="#">📧 jesszabibu15@gmail.com</a>
+            <div class="bg-gray-100 px-4 py-2 mt-4 rounded-xl text-center">
                 <p>Disponible pour de nouveaux projets</p>
                 <p>En ligne</p>
             </div>
-
         </div>
-        
     </div>
 
-    <div class="border-b-2 text-gray-800 mx-20 mt-8"></div>
+    <div class="border-b-2 text-gray-800 mt-8"></div>
 
-    <div class="capitalize font-bold flex justify-between mx-8 mt-4">
+    <div class="capitalize font-bold flex flex-col md:flex-row justify-between mx-4 md:mx-8 mt-4 text-center md:text-left gap-4">
         <p>© 2025 Jessica Zabibu | Portfolio personnel. Fait à Lubumbashi</p>
-        <i class="bi bi-arrow-up-circle">retour</i>
+        <div class="flex items-center justify-center md:justify-end gap-2">
+            <i class="bi bi-arrow-up-circle"></i>
+            <span>Retour</span>
+        </div>
     </div>
+</footer>
 
-  </footer>
    
 </body>
 </html>
