@@ -12,21 +12,28 @@
 <body class="bg-gray-200 text-black">
     <header>
         <div class="flex flex-col-2 md:flex-row justify-between items-center mt-6 mx-4 md:mx-10 capitalize font-semi-bold gap-4">
+            <!-- Logo -->
             <div class="flex items-center gap-2">
                 <p class="border-black rounded-full px-4 py-2 font-bold">j</p>
                 <p>jessica</p>
             </div>
     
-            <div class="flex flex-wrap gap-4 justify-center hidden md:hidden">
+            <!-- Menu liste (caché en mobile par défaut) -->
+            <div id="menu-links" class="flex flex-col md:flex-row md:items-center md:gap-4 mt-4 md:mt-0 hidden">
                 <a href="#" class="hover:text-pink-600">a propos</a>
                 <a href="#" class="hover:text-pink-600">home</a>
                 <a href="#" class="hover:text-pink-600">services</a>
                 <a href="#" class="hover:text-pink-600">cv</a>
                 <a href="#" class="border px-2 hover:text-pink-400">hire me</a>
             </div>
-            <i class="bi bi-list text-2xl"></i>
+    
+            <!-- Bouton menu icone -->
+            <button id="menu-toggle" class="md:hidden text-3xl">
+                <i class="bi bi-list"></i>
+            </button>
         </div>
     </header>
+    
     
 
   <section class=" text-black "> 
