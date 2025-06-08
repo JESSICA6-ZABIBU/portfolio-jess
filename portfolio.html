@@ -18,16 +18,19 @@
                     <p>jessica</p>
                 </div>
                 <!-- Bouton menu icone -->
-                <button id="menu-toggle" class="md:hidden text-3xl z-50">
+                <button id="menu-toggle" class="md:hidden text-3xl z-50 border border-black p-2 rounded-md hover:bg-gray-300 transition-transform duration-200 active:scale-90">
                     <i class="bi bi-list"></i>
                 </button>
+                
+                
         
                 <!-- Liens (mode desktop) -->
-                <div class="hidden md:flex gap-4">
+                <div class=" hidden md:flex gap-4 capitalize">
         
                     <a href="#" class="px-2 py-1 rounded hover:bg-gray-300">accueil</a>
                     <a href="#" class="px-2 py-1 rounded hover:bg-gray-300">a propos</a>
                     <a href="#" class="px-2 py-1 rounded hover:bg-gray-300">services</a>
+                    <a href="#" class="px-2 py-1 rounded hover:bg-gray-300">projets</a>
                     <a href="#" class="px-2 py-1 rounded hover:bg-gray-300">cv</a>
                     <a href="#contact" class="border border-black px-2 py-1 rounded-none transition-transform duration-300 hover:bg-gray-200 active:scale-95">contactez-moi</a>
 
@@ -36,15 +39,17 @@
             </div>
         
             <!-- Bandeau menu mobile -->
-            <div id="menu-drawer" class="absolute top-0 left-0 w-full bg-white shadow-lg transform -translate-y-full transition-transform duration-300 md:hidden z-40">
+            <div id="menu-drawer" class="absolute top-0 left-0 w-full bg-white shadow-lg transform -translate-y-full transition-transform duration-300 md:hidden z-40 capitalize">
                 <div class="flex flex-col items-center py-6 gap-4 text-lg font-semibold">
-                    <a href="#a propos" class="hover:text-pink-600">a propos</a>
-                    <a href="#home" class="hover:text-pink-600">home</a>
-                    <a href="#services" class="hover:text-pink-600">services</a>
-                    <a href="#" class="hover:text-pink-600">cv</a>
-                    <a href="#" class="border px-2 py-1 hover:text-pink-400">hire me</a>
+                    <a href="#a-propos" class="hover:bg-gray-300 transition-colors duration-200 px-4 py-2 rounded-md">a propos</a>
+                    <a href="#home" class="hover:bg-gray-300 transition-colors duration-200 px-4 py-2 rounded-md">home</a>
+                    <a href="#services" class="hover:bg-gray-300 transition-colors duration-200 px-4 py-2 rounded-md">services</a>
+                    <a href="#projets" class="hover:bg-gray-300 transition-colors duration-200 px-4 py-2 rounded-md">projets</a>
+                    <a href="#" class="hover:bg-gray-300 transition-colors duration-200 px-4 py-2 rounded-md">cv</a>
+                    <a href="#contact" class="border px-2 py-1 hover:bg-gray-300 transition-colors duration-200 rounded-md">hire me</a>
                 </div>
             </div>
+            
 
         <script>
             const menuToggle = document.getElementById('menu-toggle');
@@ -295,139 +300,29 @@
         
             <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-20">
             
-                <div>
-                    <h3>web app</h3>
-                    <img src="images/soma-congo.png" class="w-full h-40 object-cover" alt="">
-                    <p>site de e-learning au congo</p>
-                    <p>Plateforme d'apprentissage en ligne complète avec système de cours et suivi de progression.</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                    <h3 class="text-xl font-bold mb-2">Site de e-learning au Congo</h3>
+                    <img src="images/soma-congo.png" class="w-full h-40 object-cover mb-3 rounded-md" alt="">
+                    <p class="text-sm text-gray-600 text-center">Plateforme d'apprentissage en ligne complète avec système de cours et suivi de progression.</p>
                 </div>
-                <div>
-                    <img src="images/ScreenShot Tool -20250602154235.png" class="w-full h-40 object-cover" alt="">
-                    <p>application d'organisation d'evenevement</p>
+            
+                <!-- Deuxième bloc -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                    <h3 class="text-xl font-bold mb-2">App d'évènement</h3>
+                    <img src="images/ScreenShot Tool -20250602154235.png" class="w-full h-40 object-cover mb-3 rounded-md" alt="">
+                    <p class="">Solution complète pour la gestion et organisation d'événements avec interface moderne.</p>
                 </div>
-                <div>
-                    <img src="images/ScreenShot Tool -20250602195015.png" class="w-full h-40 object-cover" alt="">
-                    <p>site de formation crypto-monnaie</p>
+            
+                <!-- Troisième bloc -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                    <h3 class="text-xl font-bold mb-2">Crypto Formation</h3>
+                    <img src="images/ScreenShot Tool -20250602195015.png" class="w-full h-40 object-cover mb-3 rounded-md" alt="">
+                    <p class="">Plateforme éducative spécialisée dans l'apprentissage des crypto-monnaies et blockchain.</p>
                 </div>
             </div>
         </section>
         
-        <!-- <section class="mt-8 px-4 md:px-20 text-center mt-8 mx-auto max-w-2xl text-center bg-white rounded-xl pb-6 px-4 md:px-6 ">
-            <h1 class="capitalize font-bold text-4xl">Mes Compétences</h1>
-        
-            <div>
-                <h2 class="capitalize font-bold text-2xl pt-4">
-                    Compétences Techniques
-                </h2>
-            </div>
-        
-            <div class="mt-8 text-left space-y-6">
-        
-                <!-- HTML/CSS -->
-                <!-- <div>
-                    <div class="flex justify-between text-sm font-semibold mb-1">
-                        <span>HTML/CSS</span>
-                        <span>95%</span>
-                    </div>
-                    <div class="w-full bg-white-100 h-2 rounded-full">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 95%;"></div>
-                    </div>
-                </div>
-        
-                <!-- JavaScript -->
-                <!-- <div>
-                    <div class="flex justify-between text-sm font-semibold mb-1">
-                        <span>JavaScript</span>
-                        <span>75%</span>
-                    </div>
-                    <div class="w-full bg-gray-200 h-2 rounded-full">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 75%;"></div>
-                    </div>
-                </div> -->
-        
-                <!-- AdonisJS -->
-                <!-- <div>
-                    <div class="flex justify-between text-sm font-semibold mb-1">
-                        <span>AdonisJS</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="w-full bg-gray-200 h-2 rounded-full">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 70%;"></div>
-                    </div>
-                </div> -->
-        
-                <!-- Tailwind CSS -->
-                <!-- <div>
-                    <div class="flex justify-between text-sm font-semibold mb-1">
-                        <span>Tailwind CSS</span>
-                        <span>95%</span>
-                    </div>
-                    <div class="w-full bg-gray-200 h-2 rounded-full">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 95%;"></div>
-                    </div>
-                </div> -->
-        
-                <!-- Figma -->
-                <!-- <div>
-                    <div class="flex justify-between text-sm font-semibold mb-1">
-                        <span>Figma Community</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="w-full bg-gray-200 h-2 rounded-full">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 90%;"></div>
-                    </div>
-                </div>
-        
-            </div> -->
-
-     <!-- </section>  -->
-
-     <!-- <section class="mt-8 mx-auto max-w-2xl text-center bg-white rounded-xl pb-6 px-4 md:px-6">
-            <h1 class="capitalize font-bold text-2xl pt-4 mt-8 text-center">Soft Skills</h1>
-                <div class="mt-10 grid grid-cols-2 sm:grid-cols-2 gap-8 px-4 md:px-20 text-center">
-                    <div>
-                        <p>Travail d'équipe</p>
-                        <p>Sens du détail</p>
-                        <p>Gestion du temps</p>
-                        <p>Adaptabilité</p>
-                    </div>
-                    <div>
-                        <p>Polyvalente</p>
-                        <p>Confidentialité</p>
-                        <p>Communication</p>
-                        <p>Résolution de problèmes</p>
-                    </div>
-                </div>
-
-     </section>
-
-       <section class="mt-8 mx-auto max-w-2xl text-center bg-white rounded-xl pb-6 px-4 md:px-6">
-            <h2 class="capitalize font-bold text-2xl pt-4">Langues</h2>
-
-            <div class="mt-8 flex justify-center">
-                <div class="grid grid-cols-2 sm:grid-cols-2 gap-x-4 md:gap-x-16 text-left">
-                    <!-- Colonne Langues -->
-                    <div class="space-y-2">
-                        <p>Français</p>
-                        <p>Lingala</p>
-                        <p>Swahili</p>
-                        <p>Anglais</p>
-                    </div>
-
-                    <!-- Colonne Niveaux -->
-                    <div class="space-y-2 font-semibold">
-                        <p>Courant</p>
-                        <p>Natif</p>
-                        <p>Courant</p>
-                        <p>Débutant</p>
-                    </div>
-                </div>
-            </div>
-     </section> -->
-
-          
-          
-
+       
         <section class="discutons mt-8 mx-auto max-w-2xl text-center bg-white rounded-xl pb-6 px-6">
             <h2 class="font-bold text-2xl pt-4">Vous avez un projet en tête ?</h2>
             
@@ -495,34 +390,33 @@
               </div>
           
               <!-- Formulaire -->
-              <form class="space-y-6">
+              <form class="action="https:jesszabibu15@gmail.com method="POST" space-y-6">
                     <h3 class="text-2xl font-semibold">Envoyez-moi un message</h3>
             
-                    <!-- Nom + Email -->
+                                        <!-- Nom + Email -->
                     <div class="grid md:grid-cols-2 gap-4">
-                    <div>
+                        <div>
                         <label class="block font-medium mb-1">Nom complet *</label>
-                        <input type="text" placeholder="Votre nom" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" />
-                    </div>
-                    <div>
+                        <input type="text" name="name" placeholder="Votre nom" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+                        </div>
+                        <div>
                         <label class="block font-medium mb-1">Email *</label>
-                        <input type="email" placeholder="votre@email.com" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+                        <input type="email" name="email" placeholder="votre@email.com" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+                        </div>
                     </div>
-                    </div>
-            
+                    
                     <!-- Sujet -->
                     <div>
-                    <label class="block font-medium mb-1">Sujet *</label>
-                    <input type="text" placeholder="Objet de votre message" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+                        <label class="block font-medium mb-1">Sujet *</label>
+                        <input type="text" name="subject" placeholder="Objet de votre message" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" />
                     </div>
-            
+                    
                     <!-- Message -->
                     <div>
-                    <label class="block font-medium mb-1">Message *</label>
-                    <textarea rows="5" placeholder="Décrivez votre projet ou votre demande..." required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                        <label class="block font-medium mb-1">Message *</label>
+                        <textarea name="message" rows="5" placeholder="Décrivez votre projet ou votre demande..." required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
                     </div>
-            
-                    <!-- Bouton -->
+  
                     <div>
                     <button type="submit" class="bg-green-400 hover:bg-green-500 transition-transform transform hover:scale-105 duration-300 text-black font-semibold py-3 px-6 rounded-lg flex items-center gap-2">
                         <span>📨</span> Envoyer le message
