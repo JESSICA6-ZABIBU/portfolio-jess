@@ -24,11 +24,12 @@
         
                 <!-- Liens (mode desktop) -->
                 <div class="hidden md:flex gap-4">
+        
+                    <a href="#" class="px-2 py-1 rounded hover:bg-gray-300">accueil</a>
                     <a href="#" class="px-2 py-1 rounded hover:bg-gray-300">a propos</a>
-                    <a href="#" class="px-2 py-1 rounded hover:bg-gray-300">home</a>
                     <a href="#" class="px-2 py-1 rounded hover:bg-gray-300">services</a>
                     <a href="#" class="px-2 py-1 rounded hover:bg-gray-300">cv</a>
-                    <a href="#contact" class="border border-black px-2 py-1 rounded-none">hire me</a>
+                    <a href="#contact" class="border border-black px-2 py-1 rounded-none transition-transform duration-300 hover:bg-gray-200 active:scale-95">contactez-moi</a>
 
                 </div>
                 
@@ -37,9 +38,9 @@
             <!-- Bandeau menu mobile -->
             <div id="menu-drawer" class="absolute top-0 left-0 w-full bg-white shadow-lg transform -translate-y-full transition-transform duration-300 md:hidden z-40">
                 <div class="flex flex-col items-center py-6 gap-4 text-lg font-semibold">
-                    <a href="#" class="hover:text-pink-600">a propos</a>
-                    <a href="#" class="hover:text-pink-600">home</a>
-                    <a href="#" class="hover:text-pink-600">services</a>
+                    <a href="#a propos" class="hover:text-pink-600">a propos</a>
+                    <a href="#home" class="hover:text-pink-600">home</a>
+                    <a href="#services" class="hover:text-pink-600">services</a>
                     <a href="#" class="hover:text-pink-600">cv</a>
                     <a href="#" class="border px-2 py-1 hover:text-pink-400">hire me</a>
                 </div>
@@ -69,7 +70,7 @@
     
 
   <section class=" text-black "> 
-        <section class="hero-section ">
+        <section id="home" class="hero-section ">
             <div class=" rounded-xl mx-8 ">
                 <div class="">
                     <div  class="text-center mt-8 ">
@@ -89,7 +90,7 @@
 
         </section>
 
-        <section class="about mt-8 mx-4 md:mx-20">
+        <section id="a propos" class="about mt-8 mx-4 md:mx-20">
             <h1 class="text-center capitalize font-bold border-b mx-4 md:mx-20 text-4xl">Qui suis-je ?</h1>
         
             <div class="flex flex-col md:flex-row justify-between gap-10 items-center mt-8">
@@ -98,21 +99,139 @@
                     <p>
                         Je suis <span class="font-bold text-black-400 text-2xl">Jessica Zabibu Omari</span>, développeuse 
                         web et web mobile à Lubumbashi. Passionnée par la technologie et la résolution de problèmes, je combine mes compétences en développement et en gestion pour livrer des interfaces performantes et intuitives.
-
-Avec une formation en gestion et une expertise technique en développement web, j'apporte une approche unique alliant vision business et excellence technique à chaque projet que j'entreprends.
+                        Avec une formation en gestion et une expertise technique en développement web, 
+                        j'apporte une approche unique alliant vision business et excellence technique à chaque projet que j'entreprends.
                     </p>
                 </div>
             </div>
         </section>
+
+        <section class=" services py-12 px-4 md:px-20 text-white">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-black">Mes Services</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-200 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg mb-4">
+                        🎨
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-black">Sites Portfolio</h3>
+                    <p class="text-black mb-4">Créez votre vitrine professionnelle avec un design unique qui reflète votre personnalité et vos compétences.</p>
+                    <ul class="text-sm space-y-1 text-black">
+                        <li>• Design sur mesure</li>
+                        <li>• Design responsive</li>
+                        <li>• SEO optimisé</li>
+                        <li>• Portfolio interactif</li>
+                    </ul>
+                </div>
+        
+                <!-- Service 2 -->
+                <div class="bg-gray-200 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg mb-4">
+                        🌐
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-black">Sites Web Dynamiques</h3>
+                    <p class="text-black mb-4">Développement de sites modernes avec des fonctionnalités avancées et une expérience utilisateur exceptionnelle.</p>
+                    <ul class="text-sm space-y-1 text-black">
+                        <li>• CMS sur mesure</li>
+                        <li>• Interface admin</li>
+                        <li>• Base de données</li>
+                        <li>• APIs intégrées</li>
+                    </ul>
+                </div>
+        
+                <!-- Service 3 -->
+                <div class="bg-gray-200 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg mb-4">
+                        🛒
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-black">E-commerce</h3>
+                    <p class="text-black mb-4">Solutions e-commerce complètes pour développer votre activité en ligne efficacement.</p>
+                    <ul class="text-sm space-y-1 text-black">
+                        <li>• Boutique en ligne</li>
+                        <li>• Paiement sécurisé</li>
+                        <li>• Gestion stock</li>
+                        <li>• Analytics avancées</li>
+                    </ul>
+                </div>
+        
+                <!-- Service 4 -->
+                <div class="bg-gray-200 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg mb-4">
+                        💻
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-black">Applications Web</h3>
+                    <p class="text-black mb-4">Applications web complexes et performantes adaptées à vos besoins métier spécifiques.</p>
+                    <ul class="text-sm space-y-1 text-black">
+                        <li>• Développement SaaS</li>
+                        <li>• Dashboard admin</li>
+                        <li>• API REST</li>
+                        <li>• Déploiement cloud</li>
+                    </ul>
+                </div>
+        
+                <!-- Service 5 -->
+                <div class="bg-gray-200 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg mb-4">
+                        📱
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-black">Applications Mobiles</h3>
+                    <p class="text-black mb-4">Applications mobiles natives et hybrides pour iOS et Android avec une expérience utilisateur optimale.</p>
+                    <ul class="text-sm space-y-1 text-black">
+                        <li>• iOS & Android</li>
+                        <li>• Design UI/UX</li>
+                        <li>• Push notifications</li>
+                        <li>• Déploiement stores</li>
+                    </ul>
+                </div>
+        
+                <!-- Service 6 -->
+                <div class="bg-gray-200 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg mb-4">
+                        ⚡
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-black">Web & Mobile</h3>
+                    <p class="text-black mb-4">Solutions complètes alliant web et mobile pour une présence digitale totale et cohérente.</p>
+                    <ul class="text-sm space-y-1 text-black">
+                        <li>• Écosystème complet</li>
+                        <li>• Synchronisation</li>
+                        <li>• Design uniforme</li>
+                        <li>• Performance optimisée</li>
+                    </ul>
+                </div>
+        
+                <!-- Service 7 -->
+                <div class="bg-gray-200 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg mb-4">
+                        🛠️
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-black">Maintenance & Support</h3>
+                    <p class="text-black mb-4">Services de maintenance continue, mises à jour sécuritaires et support technique pour vos applications.</p>
+                    <ul class="text-sm space-y-1 text-black">
+                        <li>• Maintenance préventive</li>
+                        <li>• Mises à jour sécurité</li>
+                        <li>• Support 24/7</li>
+                        <li>• Optimisation performance</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+
+
+
         
         <section class="projets et realisations bg-white">
             <h2 class="text-center mt-8 pt-10 capitalize font-bold text-4xl">Projets & Réalisations</h2>
             <p class="text-center pt-2">Découvrez quelques-uns de mes projets récents...</p>
         
             <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-20">
+            
                 <div>
+                    <h3>web app</h3>
                     <img src="images/soma-congo.png" class="w-full h-40 object-cover" alt="">
                     <p>site de e-learning au congo</p>
+                    <p>Plateforme d'apprentissage en ligne complète avec système de cours et suivi de progression.</p>
                 </div>
                 <div>
                     <img src="images/ScreenShot Tool -20250602154235.png" class="w-full h-40 object-cover" alt="">
@@ -195,7 +314,7 @@ Avec une formation en gestion et une expertise technique en développement web, 
 
      </section>
 
-     <section class="mt-8 mx-auto max-w-2xl text-center bg-white rounded-xl pb-6 px-4 md:px-6">
+     <!-- <section class="mt-8 mx-auto max-w-2xl text-center bg-white rounded-xl pb-6 px-4 md:px-6">
             <h1 class="capitalize font-bold text-2xl pt-4 mt-8 text-center">Soft Skills</h1>
                 <div class="mt-10 grid grid-cols-2 sm:grid-cols-2 gap-8 px-4 md:px-20 text-center">
                     <div>
@@ -236,7 +355,7 @@ Avec une formation en gestion et une expertise technique en développement web, 
                     </div>
                 </div>
             </div>
-     </section>
+     </section> -->
 
           
           
@@ -364,8 +483,8 @@ Avec une formation en gestion et une expertise technique en développement web, 
         <div class="px-4 md:px-12 ">
             <h2 class="capitalize font-bold">Navigation</h2>
             <div class="flex flex-col gap-2 mt-2">
-                <a href="#" class="capitalize">a propos</a>
-                <a href="#" class="capitalize">home</a>
+                <a href="#a propos" class="capitalize">a propos</a>
+                <a href="#home" class="capitalize">home</a>
                 <a href="#" class="capitalize">services</a>
                 <a href="#" class="capitalize">cv</a>
             </div>
